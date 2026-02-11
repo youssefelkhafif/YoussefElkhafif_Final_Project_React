@@ -9,6 +9,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { MdOutlineShoppingBag } from "react-icons/md";
 
 import { images } from "../../constants";
+import { Link } from "react-router-dom";
 
 
 function Nav_bar() {
@@ -39,7 +40,7 @@ function Nav_bar() {
                 </div>
             </div>
 
-             <div className="border flex items-center justify-between bg-[#ffffff]  p-10 pl-10 pr-10">
+             <div className="shadow-xl flex items-center justify-between bg-[#ffffff]  p-10 pl-10 pr-10">
                 <div className="cursor-pointer" >
                     <img src={images.logo_bzaf.logo} alt="" />
                 </div>
@@ -53,7 +54,7 @@ function Nav_bar() {
                     <a className=" hover:text-[#e65540]" href="">Contact</a>
                 </div>
                 <div className="flex items-center gap-5">
-                    <a className="text-4xl text-gray-500" href=""><FaRegUserCircle/></a>
+                    <Link to={"/Signin"} ><a className="text-4xl text-gray-500" href=""><FaRegUserCircle/></a></Link>
                     <span className="w-0.5 h-5 bg-gray-500"></span>
                     <a className="text-4xl text-gray-500" href=""><MdOutlineShoppingBag/></a>
 
