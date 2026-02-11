@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Signin from "./components/signup/signin"
 import Signup from "./components/signup/signup"
 import Forgotpasswor from "./components/signup/Forgotpasswor"
+import Contact from "./pages/contact"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Signin" element={< Signin />} />
         <Route path="/Singup" element={< Signup />} />
         <Route path="/Forgotpasswor" element={<Forgotpasswor />} />
+        <Route path="/contact" element={<Contact/>} />
 
       </Routes>
 
