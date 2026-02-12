@@ -5,10 +5,14 @@ import 'flowbite';
 import { motion } from "framer-motion";
 
 
+
 import { images } from "../constants";
 import ProductCarousel from "../components/carousel/productcarousel";
 
 function Home() {
+
+
+
 
     const back = {
         backgroundImage: `url(${images.banner.banner8})`,
@@ -108,6 +112,18 @@ function Home() {
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="carousel-1"
                         />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
+                            <p className="text-sm md:text-base font-light tracking-wider mb-4">
+                                Women Collection 2018
+                            </p>
+                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider mb-8">
+                                NEW ARRIVALS
+                            </h1>
+                            <Link to={"/Homeshop"}><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                                SHOP NOW
+                            </button></Link>
+                            
+                        </div>
                     </div>
 
                     {/* Item 2 */}
@@ -117,6 +133,18 @@ function Home() {
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="carousel-2"
                         />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
+                            <p className="text-sm md:text-base font-light tracking-wider mb-4">
+                                Women Collection 2018
+                            </p>
+                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider mb-8">
+                                NEW ARRIVALS
+                            </h1>
+                            <Link to={"/Homeshop"}><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                                SHOP NOW
+                            </button></Link>
+                            
+                        </div>
                     </div>
 
                     {/* Item 3 */}
@@ -126,6 +154,18 @@ function Home() {
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="carousel-3"
                         />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
+                            <p className="text-sm md:text-base font-light tracking-wider mb-4">
+                                Women Collection 2018
+                            </p>
+                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider mb-8">
+                                NEW ARRIVALS
+                            </h1>
+                            <Link to={"/Homeshop"}><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                                SHOP NOW
+                            </button></Link>
+                            
+                        </div>
                     </div>
 
                 </div>
@@ -274,7 +314,7 @@ function Home() {
                 </div>
             </section>
 
-            <ProductCarousel/>
+            <ProductCarousel />
 
 
             {/* section 4 */}
@@ -326,7 +366,7 @@ function Home() {
                 <h1 className="text-3xl font-bold">Our Blog</h1>
                 <div className="w-full grid grid-cols-3 gap-10  pl-32 pr-32 ">
                     <div className="flex flex-col gap-y-10  h-130  ">
-                        <motion.div {...animation} className="h-60" style={{...blog1}}></motion.div>
+                        <motion.div {...animation} className="h-60" style={{ ...blog1 }}></motion.div>
                         <div className="flex flex-col gap-y-5">
                             <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
                             <span>by fashe-theme Admin on Dec 28,2017</span>
@@ -334,7 +374,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-y-10  h-130 ">
-                        <motion.div {...animation} className="h-60" style={{...blog2}}></motion.div>
+                        <motion.div {...animation} className="h-60" style={{ ...blog2 }}></motion.div>
                         <div className="flex flex-col gap-y-5">
                             <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
                             <span>by fashe-theme Admin on Dec 28,2017</span>
@@ -342,7 +382,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-y-10  h-130 ">
-                        <motion.div {...animation} className="h-60" style={{...blog3}}></motion.div>
+                        <motion.div {...animation} className="h-60" style={{ ...blog3 }}></motion.div>
                         <div className="flex flex-col gap-y-5">
                             <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
                             <span>by fashe-theme Admin on Dec 28,2017</span>

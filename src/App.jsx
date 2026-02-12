@@ -7,7 +7,8 @@ import Contact from "./pages/contact"
 import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Shop from "./pages/Shop"
-import ProductCarousel from "./components/carousel/productcarousel"
+
+import Homeshop from "./components/Homeshop/Homeshop"
 
 
 
@@ -27,8 +28,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/About" element={<About />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/ProductCarousel" element={<ProductCarousel />} />
-
+        <Route path="/Homeshop" element={<Homeshop />} />
+        
       </Routes>
       
 

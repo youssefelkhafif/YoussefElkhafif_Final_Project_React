@@ -48,7 +48,7 @@ function Nav_bar() {
                     <Link to={"/"} ><a className=" hover:text-[#e65540]" href="">Home</a></Link>
                     <Link to={"/Shop"}><a className=" hover:text-[#e65540]" href="">Shop</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">Sale</a></Link>
-                    <Link to={"/ProductCarousel"}><a className=" hover:text-[#e65540]" href="">Features</a></Link>
+                    <Link ><a className=" hover:text-[#e65540]" href="">Features</a></Link>
                     <Link to={"/Blog"}><a className=" hover:text-[#e65540]" href="">Blog</a></Link>
                     <Link to={"/About"}><a className=" hover:text-[#e65540]" href="">About</a></Link>
                     <Link to={"/contact"}><a className=" hover:text-[#e65540]" href="">Contact</a></Link>
