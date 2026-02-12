@@ -4,6 +4,7 @@ import Signin from "./components/signup/signin"
 import Signup from "./components/signup/signup"
 import Forgotpasswor from "./components/signup/Forgotpasswor"
 import Contact from "./pages/contact"
+import Blog from "./pages/Blog"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Singup" element={< Signup />} />
         <Route path="/Forgotpasswor" element={<Forgotpasswor />} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/blog" element={<Blog />} />
 
       </Routes>
 

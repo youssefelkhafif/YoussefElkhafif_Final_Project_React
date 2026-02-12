@@ -49,7 +49,7 @@ function Nav_bar() {
                     <Link><a className=" hover:text-[#e65540]" href="">Shop</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">Sale</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">Features</a></Link>
-                    <Link><a className=" hover:text-[#e65540]" href="">Blog</a></Link>
+                    <Link to={"/Blog"}><a className=" hover:text-[#e65540]" href="">Blog</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">About</a></Link>
                     <Link to={"/contact"}><a className=" hover:text-[#e65540]" href="">Contact</a></Link>
                 </div>
