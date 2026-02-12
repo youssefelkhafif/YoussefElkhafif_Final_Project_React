@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 
 import { images } from "../constants";
+import ProductCarousel from "../components/carousel/productcarousel";
 
 function Home() {
 
@@ -272,6 +273,8 @@ function Home() {
 
                 </div>
             </section>
+
+            <ProductCarousel/>
 
 
             {/* section 4 */}
