@@ -83,4 +83,8 @@ const logo_bzaf ={logo ,mastercard,paypal,visa }
 
 const shops = {shopi , shop , shopy3,shopy4,shopy5,shop6 ,shop7 ,shop8 }
 
-export { banner , bg_video , blog , cart , carousel , discover_expres , gallery , img , item ,item_cart , logo_bzaf , shops}
+
+const shopss = [ shopi,shop,shopy3,shopy4,shopy5,shop6,shop7,shop8 ]
+
+
+export { banner , bg_video , blog , cart , carousel , discover_expres , gallery , img , item ,item_cart , logo_bzaf , shops , shopss}

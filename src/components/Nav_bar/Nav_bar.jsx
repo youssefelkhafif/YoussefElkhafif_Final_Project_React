@@ -46,7 +46,7 @@ function Nav_bar() {
                 </div>
                 <div className="flex gap-5">
                     <Link to={"/"} ><a className=" hover:text-[#e65540]" href="">Home</a></Link>
-                    <Link><a className=" hover:text-[#e65540]" href="">Shop</a></Link>
+                    <Link to={"/Shop"}><a className=" hover:text-[#e65540]" href="">Shop</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">Sale</a></Link>
                     <Link><a className=" hover:text-[#e65540]" href="">Features</a></Link>
                     <Link to={"/Blog"}><a className=" hover:text-[#e65540]" href="">Blog</a></Link>

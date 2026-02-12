@@ -16,49 +16,71 @@ function Home() {
         backgroundRepeat: "no-repeat"
     }
 
-        const back1 = {
+    const back1 = {
         backgroundImage: `url(${images.cart.card1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
-        const back2 = {
+    const back2 = {
         backgroundImage: `url(${images.cart.card2})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
-        const back3 = {
+    const back3 = {
         backgroundImage: `url(${images.cart.card3})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
-        const back4 = {
+    const back4 = {
         backgroundImage: `url(${images.cart.card4})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
-        const back5 = {
+    const back5 = {
         backgroundImage: `url(${images.cart.card5})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
-        const back6 = {
+    const back6 = {
         backgroundImage: `url(${images.cart.card6})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
 
-        const glases = {
+    const glases = {
         backgroundImage: `url(${images.shops.shop})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
     }
+
+    const blog1 = {
+        backgroundImage: `url(${images.blog.blog1})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+    const blog2 = {
+        backgroundImage: `url(${images.blog.blog2})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+    const blog3 = {
+        backgroundImage: `url(${images.blog.blog3})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+
+
+
 
 
 
@@ -167,9 +189,11 @@ function Home() {
                     <div className="w-1/3 h-full flex flex-col gap-3">
 
                         <div className="w-full h-[60%]">
-                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back1,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
-                                
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back1, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
+
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2">
                                     Dresses
                                 </button>
@@ -177,9 +201,11 @@ function Home() {
                         </div>
 
                         <div className="w-full h-[40%]">
-                            <motion.div {...animation}className="flex items-center justify-center h-full w-full relative" style={{...back4,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
-                                
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back4, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
+
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2">
                                     Sunglasses
                                 </button>
@@ -192,9 +218,11 @@ function Home() {
                     <div className="w-1/3 h-full flex flex-col gap-3">
 
                         <div className="w-full h-[40%]">
-                            <motion.div {...animation}className="flex items-center justify-center h-full w-full relative" style={{...back2,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
-                                
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back2, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
+
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
                                     Watches
                                 </button>
@@ -202,9 +230,11 @@ function Home() {
                         </div>
 
                         <div className="w-full h-[60%]">
-                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back5,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
-                                
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back5, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
+
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
                                     Footwear
                                 </button>
@@ -217,8 +247,10 @@ function Home() {
                     <div className="w-1/3 h-full flex flex-col gap-3">
 
                         <div className="w-full h-[60%]">
-                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back3,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back3, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
                                     Bags
                                 </button>
@@ -226,8 +258,10 @@ function Home() {
                         </div>
 
                         <div className="w-full h-[40%]">
-                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back6,backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}}>
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{
+                                ...back6, backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center"
+                            }}>
                                 <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
                                     Accessories
                                 </button>
@@ -238,10 +272,6 @@ function Home() {
 
                 </div>
             </section>
-
-
-
-
 
 
             {/* section 4 */}
@@ -258,32 +288,88 @@ function Home() {
                     <Link><a className="hover:border-b-2 " href="">View Collection</a></Link>
                 </motion.div>
 
-                <motion.div {...animation} className="w-full h-120 flex flex-col justify-end items-center gap-y-5 p-10  " style={{...glases ,  backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"}} >
-                        <Link><p>Boxy2 T-Shirt with Roll Sleeve</p></Link>
-                        <p>Rs.5,577.73</p>
-                        <div className="flex gap-5">
-                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
-                                <p>-2600</p>
-                                <p>days</p>
-                            </div>
-                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
-                                <p>-13</p>
-                                <p>hrs</p>
-                            </div>
-                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
-                                <p>-4</p>
-                                <p>mins</p>
-                            </div>
-                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
-                                <p>-56</p>
-                                <p>secs</p>
-                            </div>
-
+                <motion.div {...animation} className="w-full h-120 flex flex-col justify-end items-center gap-y-5 p-10  " style={{
+                    ...glases, backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"
+                }} >
+                    <Link><p>Boxy2 T-Shirt with Roll Sleeve</p></Link>
+                    <p>Rs.5,577.73</p>
+                    <div className="flex gap-5">
+                        <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                            <p>-2600</p>
+                            <p>days</p>
                         </div>
-                    </motion.div>
+                        <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                            <p>-13</p>
+                            <p>hrs</p>
+                        </div>
+                        <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                            <p>-4</p>
+                            <p>mins</p>
+                        </div>
+                        <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                            <p>-56</p>
+                            <p>secs</p>
+                        </div>
+
+                    </div>
+                </motion.div>
 
             </motion.section>
+
+            {/* section 5 */}
+
+            <section className="flex flex-col items-center gap-y-20 p-10">
+                <h1 className="text-3xl font-bold">Our Blog</h1>
+                <div className="w-full grid grid-cols-3 gap-10  pl-32 pr-32 ">
+                    <div className="flex flex-col gap-y-10  h-130  ">
+                        <motion.div {...animation} className="h-60" style={{...blog1}}></motion.div>
+                        <div className="flex flex-col gap-y-5">
+                            <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+                            <span>by fashe-theme Admin on Dec 28,2017</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-y-10  h-130 ">
+                        <motion.div {...animation} className="h-60" style={{...blog2}}></motion.div>
+                        <div className="flex flex-col gap-y-5">
+                            <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+                            <span>by fashe-theme Admin on Dec 28,2017</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-y-10  h-130 ">
+                        <motion.div {...animation} className="h-60" style={{...blog3}}></motion.div>
+                        <div className="flex flex-col gap-y-5">
+                            <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+                            <span>by fashe-theme Admin on Dec 28,2017</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            {/* section6 */}
+
+            <section className="flex flex-col items-center gap-y-25 p-10">
+                <h1 className="text-4xl font-bold">@ FOLLOW US ON INSTAGRAM</h1>
+                <div className="w-full h-30 flex gap-5">
+                    <div className="w-full h-30 flex flex-col justify-center items-center border-r-2">
+                        <h3>Free Delivery Worldwide</h3>
+                        <p>Mirum est notare quam littera gothica</p>
+                    </div>
+                    <div className="w-full h-30 flex flex-col justify-center items-center border-r-2 ">
+                        <h3>Free Delivery Worldwide</h3>
+                        <p>Mirum est notare quam littera gothica</p>
+                    </div>
+                    <div className="w-full h-30 flex flex-col justify-center items-center ">
+                        <h3>Free Delivery Worldwide</h3>
+                        <p>Mirum est notare quam littera gothica</p>
+                    </div>
+
+                </div>
+            </section>
 
 
             <Footer />
