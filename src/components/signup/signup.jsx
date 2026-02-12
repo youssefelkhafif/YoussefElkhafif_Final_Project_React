@@ -2,15 +2,16 @@ import { IoChevronForwardSharp } from "react-icons/io5";
 import Footer from "../Footer/Footer";
 import Nav_bar from "../Nav_bar/Nav_bar";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AuthContext } from "../../pages/AuthContext";
 
 
 function Signup() {
 
-    const [name, setName] = useState()
-    const [lastname, setLastname] = useState()
-    const [email, setEmail] = useState()
-    const [password, setPassword] = useState()
+    const [name, setName] = useState("")
+    const [lastname, setLastname] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     const inpemail = (e) => {
         setEmail(e.target.value)
@@ -32,9 +33,9 @@ function Signup() {
 
 
 
-    const handlname = name?.length > 8
+    const handlname = name?.length >= 4
 
-    const handlstname = lastname?.length > 8
+    const handlstname = lastname?.length >= 4
 
     const hasAtandDot = email?.includes('@') && email?.includes('.')
 
@@ -43,6 +44,7 @@ function Signup() {
     const passwordsympol = /[^a-zA-Z0-9]/.test(password);
 
 
+    const { login } = useContext(AuthContext);
 
 
     const sign = () => {
@@ -55,13 +57,21 @@ function Signup() {
             setLastname("")
             setPassword("");
 
+            login({
+                name,
+                lastname,
+                email,
+                password
+            });
+
+
         } else {
             let msg = "Fix the following errors:\n";
             if (!hasAtandDot) msg += "- Email is invalid\n";
             if (!passwordlenght) msg += "- Password must be at least 8 characters\n";
             if (!passwordsympol) msg += "- Password must contain at least one symbol\n";
-            if (!handlname) msg += "your name must be at least 8 characters\n";
-            if (!handlstname) msg += "your name must be at least 8 characters\n"
+            if (!handlname) msg += "your name must be at least 5 characters\n";
+            if (!handlstname) msg += "your name must be at least 5 characters\n"
             alert(msg);
         }
     };

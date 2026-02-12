@@ -9,11 +9,14 @@ import About from "./pages/About"
 import Shop from "./pages/Shop"
 
 
+
+
 function App() {
 
 
   return (
     <>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Signin" element={< Signin />} />
@@ -25,6 +28,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
 
       </Routes>
+      
 
     </>
   )
