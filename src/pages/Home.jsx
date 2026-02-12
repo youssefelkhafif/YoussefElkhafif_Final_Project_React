@@ -14,14 +14,53 @@ function Home() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
-
-
     }
 
-    // const animation = {
-    //     whileHover:{ scale: 1.1 },
-    //     whileTap: { scale: 0.95 }
-    // }
+        const back1 = {
+        backgroundImage: `url(${images.cart.card1})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+        const back2 = {
+        backgroundImage: `url(${images.cart.card2})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+        const back3 = {
+        backgroundImage: `url(${images.cart.card3})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+        const back4 = {
+        backgroundImage: `url(${images.cart.card4})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+        const back5 = {
+        backgroundImage: `url(${images.cart.card5})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+        const back6 = {
+        backgroundImage: `url(${images.cart.card6})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+
+        const glases = {
+        backgroundImage: `url(${images.shops.shop})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+    }
+
+
 
     const animation = {
         initial: { backgroundSize: "100% 100%" },
@@ -119,6 +158,88 @@ function Home() {
                 </button>
             </div>
 
+            {/* section 2  */}
+
+            <section className="container mx-auto p-10 pt-3">
+                <div className="w-full h-200 flex gap-2">
+
+                    {/* Column 1 */}
+                    <div className="w-1/3 h-full flex flex-col gap-3">
+
+                        <div className="w-full h-[60%]">
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back1,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2">
+                                    Dresses
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        <div className="w-full h-[40%]">
+                            <motion.div {...animation}className="flex items-center justify-center h-full w-full relative" style={{...back4,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2">
+                                    Sunglasses
+                                </button>
+                            </motion.div>
+                        </div>
+
+                    </div>
+
+                    {/* Column 2 */}
+                    <div className="w-1/3 h-full flex flex-col gap-3">
+
+                        <div className="w-full h-[40%]">
+                            <motion.div {...animation}className="flex items-center justify-center h-full w-full relative" style={{...back2,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
+                                    Watches
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        <div className="w-full h-[60%]">
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back5,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
+                                    Footwear
+                                </button>
+                            </motion.div>
+                        </div>
+
+                    </div>
+
+                    {/* Column 3 */}
+                    <div className="w-1/3 h-full flex flex-col gap-3">
+
+                        <div className="w-full h-[60%]">
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back3,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
+                                    Bags
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        <div className="w-full h-[40%]">
+                            <motion.div {...animation} className="flex items-center justify-center h-full w-full relative" style={{...back6,backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}}>
+                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
+                                    Accessories
+                                </button>
+                            </motion.div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
 
 
 
@@ -137,7 +258,30 @@ function Home() {
                     <Link><a className="hover:border-b-2 " href="">View Collection</a></Link>
                 </motion.div>
 
-                <div className="w-full h-120 bg-amber-300">2</div>
+                <motion.div {...animation} className="w-full h-120 flex flex-col justify-end items-center gap-y-5 p-10  " style={{...glases ,  backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"}} >
+                        <Link><p>Boxy2 T-Shirt with Roll Sleeve</p></Link>
+                        <p>Rs.5,577.73</p>
+                        <div className="flex gap-5">
+                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                                <p>-2600</p>
+                                <p>days</p>
+                            </div>
+                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                                <p>-13</p>
+                                <p>hrs</p>
+                            </div>
+                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                                <p>-4</p>
+                                <p>mins</p>
+                            </div>
+                            <div className="w-20 h-20 border flex flex-col justify-center items-center">
+                                <p>-56</p>
+                                <p>secs</p>
+                            </div>
+
+                        </div>
+                    </motion.div>
 
             </motion.section>
 

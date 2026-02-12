@@ -5,6 +5,7 @@ import Signup from "./components/signup/signup"
 import Forgotpasswor from "./components/signup/Forgotpasswor"
 import Contact from "./pages/contact"
 import Blog from "./pages/Blog"
+import About from "./pages/About"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Forgotpasswor" element={<Forgotpasswor />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/About" element={<About />} />
 
       </Routes>
 
