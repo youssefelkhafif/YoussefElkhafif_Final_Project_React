@@ -26,7 +26,7 @@ function Homeshop() {
                             <img
                                 src={images.shops.shop8}
                                 alt="Winter Collection"
-                                className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-105"
+                                className="w-full h-150 object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <div className="absolute bottom-8 left-8 text-white">
                                 <h3 className="text-3xl font-bold mb-2">Winter</h3>
@@ -42,7 +42,7 @@ function Homeshop() {
                             <img
                                 src={images.shops.shop}
                                 alt="Featured Collection"
-                                className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-105"
+                                className="w-full h-150 object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <div className="absolute bottom-8 left-8 text-white">
                                 <h3 className="text-3xl font-bold mb-2">Featured</h3>
@@ -58,7 +58,7 @@ function Homeshop() {
                             <img
                                 src={images.shops.shop8}
                                 alt="Summer Collection"
-                                className="w-full h-[600px] object-cover transition-transform duration-300 group-hover:scale-105"
+                                className="w-full h-150 object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <div className="absolute bottom-8 left-8 text-white">
                                 <h3 className="text-3xl font-bold mb-2">Summer</h3>

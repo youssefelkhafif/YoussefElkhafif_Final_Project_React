@@ -13,4 +13,10 @@ import { logo_bzaf } from "./images";
 import { shops } from "./images";
 import { shopss } from "./images";
 
-export const images = { banner , bg_video , blog , cart , carousel , discover_expres , gallery , img , item ,item_cart , logo_bzaf , shops , shopss}
+
+
+
+
+
+
+export const images = {   banner , bg_video , blog , cart , carousel , discover_expres , gallery , img , item ,item_cart , logo_bzaf , shops , shopss}

@@ -9,6 +9,7 @@ import About from "./pages/About"
 import Shop from "./pages/Shop"
 
 import Homeshop from "./components/Homeshop/Homeshop"
+import Details from "./pages/details"
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/Homeshop" element={<Homeshop />} />
+        <Route path="/Details/:id" element={<Details />} />
         
       </Routes>
       

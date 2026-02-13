@@ -132,7 +132,7 @@ function Contact() {
                         <div>
                             <button onClick={sendEmail}
                              className="w-40 h-15 text-white bg-[#222222] rounded-full">
-                               
+
                                 Send
                             </button>
                         </div>
@@ -147,8 +147,4 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
-
 
