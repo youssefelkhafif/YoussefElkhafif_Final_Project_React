@@ -3,8 +3,21 @@ import Nav_bar from "../components/Nav_bar/Nav_bar";
 import Footer from "../components/Footer/Footer";
 import { images } from "../constants";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
+
+import { useCart } from "../components/cartProvider/CartProvider";
+import CartModal from "../components/cartProvider/cartmodal";
+
 
 function Shop() {
+
+    // const [index, setIndex] = useState(0);
+    const [hoveredId, setHoveredId] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+    const [addedProduct, setAddedProduct] = useState(null);
+
+    const { addToCart } = useCart();
 
     const products = Array.from({ length: 8 }, (_, i) => ({
         id: i + 1,
@@ -22,8 +35,24 @@ function Shop() {
         whileHover: { scale: 1.1, opacity: 1 },
         transition: { duration: 0.4, ease: "easeOut" }
     };
+
+    const handleAddToCart = (products) => {
+        addToCart(products);
+        setAddedProduct(products);
+        setShowModal(true);
+    };
+
     return (
+
         <div className="bg-white ">
+            {/* Cart Modal */}
+            {showModal && (
+                <CartModal
+                    product={addedProduct}
+                    onClose={() => setShowModal(false)}
+                />
+            )}
+
             <Nav_bar />
 
             {/* HERO */}
@@ -103,7 +132,7 @@ function Shop() {
                     </aside>
 
                     {/* MAIN */}
-                    <main className="flex-1">
+                    <div className="flex-1">
                         {/* TOP BAR */}
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8 text-sm">
                             <div className="flex gap-3">
@@ -123,11 +152,14 @@ function Shop() {
                         <div className="flex flex-wrap gap-8">
                             {products.map((p) => (
                                 <div
-                                    key={p.id}
+                                    
+                                     key={p.id}
+                                    onMouseEnter={() => setHoveredId(p.id)}
+                                    onMouseLeave={() => setHoveredId(null)}
                                     className="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]"
                                 >
                                     <div
-                                        
+
                                         className="relative bg-gray-100 overflow-hidden">
                                         {p.sale && (
                                             <span className="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full z-10">
@@ -142,6 +174,19 @@ function Shop() {
                                             alt=""
                                             className="w-full h-95 object-cover"
                                         />
+
+                                        <button
+                                            onClick={() => handleAddToCart(p)}
+                                            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-gray-800"
+                                            style={{
+                                                opacity: hoveredId === p.id ? 1 : 0,
+                                                transform: hoveredId === p.id
+                                                    ? 'translateX(-50%) translateY(0)'
+                                                    : 'translateX(-50%) translateY(20px)'
+                                            }}
+                                        >
+                                            ADD TO CART
+                                        </button>
                                     </div>
 
                                     <h3 className="mt-4 text-sm font-medium text-gray-800">
@@ -173,7 +218,7 @@ function Shop() {
                             <button className="w-10 h-10 rounded-full border">2</button>
                             <button className="w-10 h-10 rounded-full border">&gt;</button>
                         </div>
-                    </main>
+                    </div>
                 </div>
             </section>
 

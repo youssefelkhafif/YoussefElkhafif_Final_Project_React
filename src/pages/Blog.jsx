@@ -40,7 +40,7 @@ function Blog() {
 
                         {/* Map through blogs data */}
                         {blogs.map((blog) => (
-                            <article key={blog.id} className="mb-12 bg-white rounded-lg overflow-hidden shadow-sm">
+                            <div key={blog.id} className="mb-12 bg-white rounded-lg overflow-hidden shadow-sm">
                                 <motion.div
                                     {...animation}
                                     className="relative"
@@ -79,7 +79,7 @@ function Blog() {
                                         Continue Reading →
                                     </Link>
                                 </div>
-                            </article>
+                            </div>
                         ))}
 
                         {/* Pagination */}
@@ -98,7 +98,7 @@ function Blog() {
                     </div>
 
                     {/* Right Side - Sidebar */}
-                    <aside className="w-full lg:w-1/3">
+                    <div className="w-full lg:w-1/3">
 
                         {/* Search Box */}
                         <div className="mb-8">
@@ -202,7 +202,7 @@ function Blog() {
                             </div>
                         </div>
 
-                    </aside>
+                    </div>
 
                 </div>
             </div>

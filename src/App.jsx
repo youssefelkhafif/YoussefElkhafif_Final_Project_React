@@ -14,6 +14,7 @@ import Details from "./pages/details"
 
 
 
+
 function App() {
 
 

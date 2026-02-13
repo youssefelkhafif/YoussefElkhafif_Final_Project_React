@@ -11,8 +11,15 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { images } from "../../constants";
 import { Link } from "react-router-dom";
 
+import { useCart } from "../cartProvider/CartProvider";
+
+
 
 function Nav_bar() {
+    const { getCartCount } = useCart();
+    const cartCount = getCartCount();
+
+
     return (
         <nav className=" ">
             <div className="flex items-center justify-between bg-[#f5f5f5]  p-5 pl-10 pr-10">
@@ -56,7 +63,18 @@ function Nav_bar() {
                 <div className="flex items-center gap-5">
                     <Link to={"/Signin"} ><a className="text-4xl text-gray-500" href=""><FaRegUserCircle /></a></Link>
                     <span className="w-0.5 h-5 bg-gray-500"></span>
-                    <a className="text-4xl text-gray-500" href=""><MdOutlineShoppingBag /></a>
+                    <Link to="/cart" className="relative">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+
+                        {/* Cart Badge */}
+                        {cartCount > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                {cartCount}
+                            </span>
+                        )}
+                    </Link>
 
                 </div>
             </div>

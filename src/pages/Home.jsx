@@ -235,9 +235,9 @@ function Home() {
                                 backgroundPosition: "center"
                             }}>
 
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2">
+                                <Link to={"/Shop"}><button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2">
                                     Dresses
-                                </button>
+                                </button></Link>
                             </motion.div>
                         </div>
 
@@ -246,10 +246,10 @@ function Home() {
                                 ...back4, backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center"
                             }}>
-
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2">
+                                <Link to={"/Shop"}><button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2">
                                     Sunglasses
-                                </button>
+                                </button></Link>
+                                
                             </motion.div>
                         </div>
 
@@ -263,10 +263,10 @@ function Home() {
                                 ...back2, backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center"
                             }}>
-
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
+                                <Link to={"/Shop"}><button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
                                     Watches
-                                </button>
+                                </button></Link>
+                                
                             </motion.div>
                         </div>
 
@@ -275,10 +275,10 @@ function Home() {
                                 ...back5, backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center"
                             }}>
-
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
+                                <Link to={"/Shop"}><button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
                                     Footwear
-                                </button>
+                                </button></Link>
+                                
                             </motion.div>
                         </div>
 
@@ -292,9 +292,10 @@ function Home() {
                                 ...back3, backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center"
                             }}>
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
+                                    <Link to={"Shop"}> <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-10 left-1/2 -translate-x-1/2" >
                                     Bags
-                                </button>
+                                </button></Link>
+                                
                             </motion.div>
                         </div>
 
@@ -303,9 +304,10 @@ function Home() {
                                 ...back6, backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center"
                             }}>
-                                <button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
+                                <Link to={"/Shop"}><button className="bg-white w-40 h-12 text-lg cursor-pointer hover:text-white hover:bg-red-500 absolute bottom-6 left-1/2 -translate-x-1/2" >
                                     Accessories
-                                </button>
+                                </button></Link>
+                                
                             </motion.div>
                         </div>
 
