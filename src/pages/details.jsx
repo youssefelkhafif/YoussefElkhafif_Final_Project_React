@@ -43,7 +43,7 @@ function Details() {
                             <img
                                 src={pruduct.image}
                                 alt={pruduct.title}
-                                className="w-full h-64 md:h-96 lg:h-[500px] object-cover rounded-lg"
+                                className="w-full h-64 md:h-96 lg:h-125 object-cover rounded-lg"
                             />
                         </div>
 

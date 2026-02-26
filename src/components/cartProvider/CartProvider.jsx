@@ -19,7 +19,7 @@ export function CartProvider({ children }) {
     setCart((prevCart) => {
       // Check if product already exists in cart
       const existingItem = prevCart.find((item) => item.id === product.id);
-      
+
       if (existingItem) {
         // Increase quantity if exists
         return prevCart.map((item) =>
@@ -43,7 +43,7 @@ export function CartProvider({ children }) {
       removeFromCart(productId);
       return;
     }
-    
+
     setCart((prevCart) =>
       prevCart.map((item) =>
         item.id === productId ? { ...item, quantity } : item
