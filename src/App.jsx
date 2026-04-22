@@ -10,6 +10,7 @@ import Shop from "./pages/Shop"
 
 import Homeshop from "./components/Homeshop/Homeshop"
 import Details from "./pages/details"
+import { CartProvider } from "./components/cartProvider/CartProvider"
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/Homeshop" element={<Homeshop />} />
         <Route path="/Details/:id" element={<Details />} />
+        <Route path="cart" element={<CartProvider />} />
         
       </Routes>
       
